@@ -1,4 +1,13 @@
 
+# Exercicio 2 
+
+---
+## 📊 Olha esse diagrama!
+
+O diagrama apresentado representa a hierarquia de classes abaixo:
+<br/>
+<img width="191" height="150" alt="image" src="https://github.com/user-attachments/assets/c4065a64-ef19-4d4d-84b9-daee22eaa145" />
+
 ---
 
 ## 🧩 O que devo fazer?
@@ -29,14 +38,6 @@ Construa as classes acima e implemente os seguintes comportamentos:
 - Métodos: retornar nome e titulação
 
 ---
-
-#Exercicio 2 
-## 📊 Olha esse diagrama!
-
-O diagrama apresentado representa a hierarquia de classes abaixo:
-<br/>
-<img width="191" height="150" alt="image" src="https://github.com/user-attachments/assets/c4065a64-ef19-4d4d-84b9-daee22eaa145" />
-
 
 ### 🎓 Classe `Aluno` (herda de Pessoa)
 - Atributos: `matricula`, `nota1`, `nota2`  
