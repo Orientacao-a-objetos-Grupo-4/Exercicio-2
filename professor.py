@@ -6,13 +6,10 @@ class Profressor(Pessoa):
         self.__titulacaoMaxima = titulacaoMaxima
 
     def getTitulacaoMaxima(self):
-        return self.titulacaoMaxima
+        return self.__titulacaoMaxima
     
     def setTitulacaoMaxima(self, titulacaoMaxima):
-        self.titulacaoMaxima = titulacaoMaxima
+        self.__titulacaoMaxima = titulacaoMaxima
 
-    def getTitulacaoMaxima(self):
-        return self.titulacaoMaxima
-    
-    def setTitulacaoMaxima(self, titulacaoMaxima):
-        self.titulacaoMaxima = titulacaoMaxima
+    def __str__(self):
+        return f"Nome do Professor: {self.get_nome()}, Idade: {self.get_idade()}, Titulação: {self.getTitulacaoMaxima()}"

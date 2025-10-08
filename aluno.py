@@ -1,15 +1,14 @@
 from pessoa import Pessoa
 
 class Aluno(Pessoa):
-
-    def __init__(self, nome, idade, curso):
+    nota_aprovacao = 7  
+    def __init__(self, nome, idade, curso, numero_matricula, nota1=0, nota2=0):
         super().__init__(nome, idade)
-        self.curso = curso
-        self.numero_matricula = 0
-        self.__nota1 = 0
-        self.__nota2 = 0
+        self.__curso = curso
+        self.__numero_matricula = numero_matricula
+        self.__nota1 = nota1
+        self.__nota2 = nota2
 
-    
     # Getters
     def get_nota1(self):
         return self.__nota1
@@ -17,8 +16,11 @@ class Aluno(Pessoa):
     def get_nota2(self):
         return self.__nota2
     
-    def get_nota_aprovacao(self):
-        return self.__nota_aprovacao
+    def get_curso(self):
+        return self.__curso
+    
+    def get_numero_matricula(self):
+        return self.__numero_matricula
     
     # Setters
     def set_nota1(self, nota1):
@@ -27,8 +29,11 @@ class Aluno(Pessoa):
     def set_nota2(self, nota2):
         self.__nota2 = nota2
 
-    def set_nota_aprovacao(self, nota_aprovacao):
-        self.__nota_aprovacao = nota_aprovacao
+    def set_curso(self, curso):
+        self.__curso = curso
+
+    def set_numero_matricula(self, numero_matricula):
+        self.__numero_matricula = numero_matricula
     
     # Cálculo da média
     def calcular_media(self):
@@ -37,7 +42,7 @@ class Aluno(Pessoa):
     # Impressão da situação
     def printar_situacao(self):
         media = self.calcular_media()
-        if media >= self.__class__.__nota_aprovacao:
-            print(f"O aluno {self.get_nome()}, matriculado no curso {self.curso}, foi aprovado com média: {media:.2f}")
+        if media >= self.__class__.nota_aprovacao:
+            print(f"✅ O aluno {self.get_nome()}, matriculado no curso {self.__curso}, foi aprovado com média: {media:.2f}")
         else:
-            print(f"O aluno {self.get_nome()}, matriculado no curso {self.curso}, foi reprovado com média: {media:.2f}")
+            print(f"❌ O aluno {self.get_nome()}, matriculado no curso {self.__curso}, foi reprovado com média: {media:.2f}")
