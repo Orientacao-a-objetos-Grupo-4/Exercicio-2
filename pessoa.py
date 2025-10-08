@@ -16,3 +16,16 @@ class pessoa(abc.ABC):
 
     def setIdade(self, idade):
         self.__idade = idade
+
+
+    def setNome(self, nome):
+        self.nome = nome
+
+    def setIdade(self, idade):
+        self.idade = idade
+
+    def getNome(self):
+        return self.nome
+
+    def getIdade(self):
+        return self.idade

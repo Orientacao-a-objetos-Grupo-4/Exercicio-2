@@ -10,3 +10,9 @@ class Profressor(Pessoa):
     
     def setTitulacaoMaxima(self, titulacaoMaxima):
         self.titulacaoMaxima = titulacaoMaxima
+
+    def getTitulacaoMaxima(self):
+        return self.titulacaoMaxima
+    
+    def setTitulacaoMaxima(self, titulacaoMaxima):
+        self.titulacaoMaxima = titulacaoMaxima
