@@ -1,31 +1,23 @@
 import abc
 
-class pessoa(abc.ABC):
+class Pessoa(abc.ABC):
     def __init__(self, nome, idade):
         self.__nome = nome
         self.__idade = idade
 
-    def getNome(self):
+    # Getters
+    def get_nome(self):
         return self.__nome
     
-    def getIdade(self):
+    def get_idade(self):
         return self.__idade
     
-    def setNome(self, nome):
+    # Setters
+    def set_nome(self, nome):
         self.__nome = nome
 
-    def setIdade(self, idade):
+    def set_idade(self, idade):
         self.__idade = idade
 
-
-    def setNome(self, nome):
-        self.nome = nome
-
-    def setIdade(self, idade):
-        self.idade = idade
-
-    def getNome(self):
-        return self.nome
-
-    def getIdade(self):
-        return self.idade
+    def __str__(self):
+        return f"Nome: {self.__nome}, Idade: {self.__idade}"
