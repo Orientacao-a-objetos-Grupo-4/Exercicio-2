@@ -1,6 +1,4 @@
-import abc
-
-class Pessoa(abc.ABC):
+class Pessoa():
     def __init__(self, nome, idade):
         self.__nome = nome
         self.__idade = idade
