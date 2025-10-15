@@ -23,11 +23,18 @@ aluno_graduacao2.set_nota2(4)
 
 
 # Printar situação dos alunos
+print("AProvados:")
 aluno_medio.printar_situacao()
 aluno_graduacao.printar_situacao()
 
+print("-------------------------------------")
+
+print("Reprovados:")
 aluno_medio2.printar_situacao()
 aluno_graduacao2.printar_situacao()
 
+print("-------------------------------------")
+
+print("Professores:")
 peofessor = Profressor("Joaquim", 40, "Doutorado")
 print(peofessor)   
