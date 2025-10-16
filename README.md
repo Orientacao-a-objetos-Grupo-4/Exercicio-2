@@ -57,22 +57,3 @@ Construa as classes acima e implemente os seguintes comportamentos:
 
 ---
 
-## 📦 Entrega
-
-📅 **Data:** vide exercício anterior  
-
-📨 **Forma de entrega:** conforme instruções anteriores  
-
-🏁 **Pontuação:** igual ao exercício anterior  
-
-❓ **Dúvidas:** mesmas orientações  
-
-📝 **Observação final:** idem  
-
----
-
-## 🍀 Boa sorte!
-
-> “Programar é transformar lógica em realidade.”  
->
-> 🚀 **Mãos à obra e boa codificação!**
